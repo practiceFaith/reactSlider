@@ -1,0 +1,70 @@
+*{margin: 0;padding: 0}
+.slider-wrapper{
+    margin: 50px auto;
+    width: 400px;
+    height: 280px;
+    border: 2px solid green;
+    border-radius:5px;
+    overflow: hidden;
+    position: relative;
+}
+.slider-group{
+    position: absolute;
+    list-style: none;
+    height: 280px;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.slider-group-item{
+    width: 400px;
+    height: 100%;
+    float: left;
+}
+.slider-group-item img{
+    width: 100%;
+    height: 100%;
+}
+.dots{
+    position: absolute;
+    left: 0px;
+    bottom:20px;
+    width:100%;
+    text-align: center;
+}
+.dots .dot{
+    width: 10px;
+    height: 10px;
+    border-radius:50%;
+    cursor: pointer;
+    border: 1px solid green;
+    display:inline-block;
+    margin: 0 3px;
+}
+.dots .dot.active{
+    background: green;
+}
+.arrows{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    left: 0;
+    top: 50%;
+    margin-top: -20px;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.arrows span:hover{
+    color: green;
+}
+.arrows .arrowLeft{
+    float: left;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.arrows .arrowRight{
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+}
